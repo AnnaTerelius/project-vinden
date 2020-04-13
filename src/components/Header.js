@@ -7,7 +7,7 @@ export const Header = () => {
 
     return (
         <div className="header">
-            <div >
+            <div className="logo-img">
                 <img src={cloud} className="logo" alt="logo" />
             </div>
           

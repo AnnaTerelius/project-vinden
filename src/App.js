@@ -1,17 +1,19 @@
 import React from 'react';
 import { Header } from './components/Header';
-import { StoredItems } from './components/StoredItems';
+import { Items } from './components/Items';
+import { Footer } from './components/Footer';
 import { Provider } from 'react-redux'
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 //import logo from './logo.svg';
 import './App.css';
 import {header} from './reducers/header';
-import {storedItems} from './reducers/storedItems';
+//import {items} from './reducers/items';
+
 
 //reducer byt namn från quis till det som ska anvöndas i denna app
 const reducer = combineReducers({
   header: header.reducer,
-  storedItems: storedItems.reducer
+  //items: items.reducer
 })
 
 const store = configureStore({ reducer })
@@ -21,7 +23,8 @@ export const App = () => (
       <Provider store={store}>
         <div className="Main">
           <Header />
-          <StoredItems />
+          <Items />
+          <Footer />
         </div>
       </Provider>
     

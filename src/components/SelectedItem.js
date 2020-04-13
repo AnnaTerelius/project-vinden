@@ -2,15 +2,15 @@ import React from 'react';
 import {useDispatch} from 'react-redux';
 import {header} from '../reducers/header'
 
-export const Item = ({item}) => {
+export const SelectedItem = ({item}) => {
     const dispatch = useDispatch()
     return (
         <div className="itemContainer">
              {item.title}
-            <button className="item-btn"
+            <button className="added-btn"
                 type='button'
-                onClick={()=> dispatch(header.actions.addItem(item))}>
-                Add
+                onClick={()=> dispatch(header.actions.removeItem(item))}>
+                Remove
             </button>
         </div>
     )
