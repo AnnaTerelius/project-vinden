@@ -1,7 +1,16 @@
+This is my project for Vinden.
 
+It is an app for a restaurant/event agency or similar, where the customer can choose between different stored items based on tags. For example if the customer are throwing a wedding-party and needs to get wedding-items out from storage, they search for wedding in the app and choose which ones to use this time. Since all items are taged anyone from the restaurant/event agency can use the app without further knowledge aboute which items belongs to different kinds of parties.
 
+I will continue on this project, making it possible to use enter instead of searchbutton, making the view of items scrollable if there are many, improve the css and make it responsive. 
 
+In frontend I used React for this, redux store and useState. In backend Mongodb and mongoose.
 
+Have a look here:
+https://project-vinden.netlify.com/
+
+Backend is deployed here:
+https://project-vinden.herokuapp.com/
 
 
 
