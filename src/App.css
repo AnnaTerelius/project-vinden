@@ -34,12 +34,6 @@
   width: 360px;
 }
 
-/*@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}*/
-
 .Main {
   background-color: rgb(255, 232, 230);
   min-height: 100vh;
@@ -188,8 +182,6 @@
   justify-content: space-between;
   width: 80%;
 }
-
-
 
 @keyframes App-logo-spin {
   from {

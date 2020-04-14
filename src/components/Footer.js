@@ -5,12 +5,9 @@ import {header} from '../reducers/header'
 import {searchTags} from '../reducers/header'
 import {searchItem} from '../reducers/header'
 
-
 export const Footer = () => {
     const allTags = useSelector((store)=> (store.header.allTags))
     const dispatch = useDispatch()
-    const [message, setMessage] = useState('')
-    const [submit, setSubmit] = useState('')
 
     return (
         <div className="footer">
@@ -18,9 +15,9 @@ export const Footer = () => {
                  <div onClick={()=> dispatch(searchItem(item))} >{item}</div>
                 ))}
             <div className="container">
-               <div className="btn-container">
-                <button className="item-btn" type="button" onClick={()=> dispatch(searchTags())}>Tags</button>
-                <button className="item-btn" type='button' onClick={()=> {dispatch(header.actions.reset()); setMessage(''); setSubmit(''); window.location.reload();}}>Reset</button>
+                <div className="btn-container">
+                    <button className="item-btn" type="button" onClick={()=> dispatch(searchTags())}>Tags</button>
+                    <button className="item-btn" type='button' onClick={()=> {dispatch(header.actions.reset()); window.location.reload();}}>Reset</button>
                 </div>
             </div>
         </div>

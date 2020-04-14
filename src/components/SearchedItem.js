@@ -7,8 +7,8 @@ export const SearchedItem = ({item}) => {
   
     return (
         <div className="itemContainer">
-         {item.title}
-         <button className="added-btn" type="button" onClick={() => dispatch(header.actions.addItem(item))}>Add</button>
+            {item.title}
+            <button className="added-btn" type="button" onClick={() => dispatch(header.actions.addItem(item))}>Add</button>
         </div>
     )
 }

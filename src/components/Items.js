@@ -6,7 +6,6 @@ import {SelectedItem} from './SelectedItem';
 import {SearchedItem} from './SearchedItem';
 import {header} from '../reducers/header'
 import {searchItem} from '../reducers/header'
-import {searchTags} from '../reducers/header'
 
 export const Items = ({item}) => {
 
@@ -15,7 +14,6 @@ export const Items = ({item}) => {
 
     const searchedItems = useSelector((store)=> (store.header.searchedItems))
     const selectedItems = useSelector((store)=> (store.header.selectedItems))
-    const allTags = useSelector((store)=> (store.header.allTags))
     const dispatch = useDispatch()
 
     return (
