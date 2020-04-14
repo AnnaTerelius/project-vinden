@@ -42,7 +42,7 @@ export const header = createSlice({
 
 export const searchItem = (searchString) => {
     return dispatch => {
-        fetch(`http://project-vinden.herokuapp.com/${searchString}`)
+        fetch(`https://project-vinden.herokuapp.com/${searchString}`)
         .then (res => res.json())
         .then (json => { 
             json.map((item) => (
@@ -54,7 +54,7 @@ export const searchItem = (searchString) => {
 
 export const searchTags = () => {
     return dispatch => {
-        fetch(`http://project-vinden.herokuapp.com/tags`)
+        fetch(`https://project-vinden.herokuapp.com/tags`)
         .then (res => res.json())
         .then (json => { 
             json.map((item) => (
