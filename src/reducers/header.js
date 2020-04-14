@@ -61,7 +61,7 @@ export const header = createSlice({
 export const searchItem = (searchString) => {
     console.log("inside searchItem")
     return dispatch => {
-        fetch(`http://localhost:8000/${searchString}`)
+        fetch(`http://project-vinden.herokuapp.com/${searchString}`)
         .then (res => res.json())
         .then (json => { 
            // console.log(json)
@@ -75,7 +75,7 @@ export const searchItem = (searchString) => {
 export const searchTags = () => {
     console.log("inside searchTags")
     return dispatch => {
-        fetch(`http://localhost:8000/tags`)
+        fetch(`http://project-vinden.herokuapp.com/tags`)
         .then (res => res.json())
         .then (json => { 
             console.log(json)
