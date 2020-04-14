@@ -11,9 +11,11 @@ export const Footer = () => {
 
     return (
         <div className="footer">
-            {allTags.map((item) => (
-                 <div onClick={()=> dispatch(searchItem(item))} >{item}</div>
-                ))}
+            <div className="container">
+                {allTags.map((item) => (
+                    <div className="tag" onClick={()=> dispatch(searchItem(item))} >{item}</div>
+                    ))}
+            </div>
             <div className="container">
                 <div className="btn-container">
                     <button className="item-btn" type="button" onClick={()=> dispatch(searchTags())}>Tags</button>
